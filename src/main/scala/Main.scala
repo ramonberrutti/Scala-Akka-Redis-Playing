@@ -7,7 +7,7 @@ import scala.io.StdIn
 import com.redis._
 
 object Main {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
 
     implicit val system = ActorSystem("my-system")
     implicit val materializer = ActorMaterializer()
